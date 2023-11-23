@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                    
                     </a>
                 </div>
 
@@ -98,3 +98,69 @@
         </div>
     </div>
 </nav>
+<style>
+    /* Estilos del contenedor principal de la barra de navegación */
+nav {
+    background-color: #ffffff; /* Cambia el color de fondo según tu preferencia */
+    border-bottom: 1px solid #e2e8f0; /* Cambia el color del borde inferior según tu preferencia */
+}
+
+/* Estilos del logo */
+nav .flex items-center a {
+    /* Agrega estilos para el logo si es necesario */
+}
+
+/* Estilos de los enlaces de navegación */
+nav .hidden space-x-8 sm:-my-px sm:ms-10 sm:flex a {
+    padding: 1rem; /* Ajusta el espacio alrededor de los enlaces según tu preferencia */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente según tu preferencia */
+    font-weight: 500; /* Ajusta el peso de la fuente según tu preferencia */
+    color: #4a5568; /* Cambia el color del texto según tu preferencia */
+    transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
+}
+
+nav .hidden space-x-8 sm:-my-px sm:ms-10 sm:flex a:hover {
+    color: #2d3748; /* Cambia el color del texto al pasar el ratón por encima según tu preferencia */
+}
+
+/* Estilos del menú desplegable en pantallas pequeñas */
+nav .hidden sm:hidden {
+    background-color: #ffffff; /* Cambia el color de fondo del menú desplegable según tu preferencia */
+    border-top: 1px solid #e2e8f0; /* Cambia el color del borde superior según tu preferencia */
+}
+
+nav .hidden sm:hidden a {
+    display: block;
+    padding: 1rem; /* Ajusta el espacio alrededor de los enlaces según tu preferencia */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente según tu preferencia */
+    font-weight: 500; /* Ajusta el peso de la fuente según tu preferencia */
+    color: #4a5568; /* Cambia el color del texto según tu preferencia */
+    transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
+}
+
+nav .hidden sm:hidden a:hover {
+    color: #2d3748; /* Cambia el color del texto al pasar el ratón por encima según tu preferencia */
+}
+
+/* Estilos del botón del menú desplegable en pantallas pequeñas */
+nav .hidden sm:hidden button {
+    padding: 0.75rem; /* Ajusta el espacio alrededor del botón según tu preferencia */
+}
+
+/* Estilos del botón del menú desplegable en pantallas pequeñas cuando está abierto */
+nav .hidden sm:hidden button:focus {
+    outline: none; /* Elimina el contorno predeterminado al hacer clic en el botón */
+}
+
+nav .hidden sm:hidden button svg {
+    height: 1.5rem; /* Ajusta la altura del icono según tu preferencia */
+    width: 1.5rem; /* Ajusta la anchura del icono según tu preferencia */
+    fill: #4a5568; /* Cambia el color del icono según tu preferencia */
+    transition: fill 0.3s ease; /* Agrega una transición suave al cambio de color del icono */
+}
+
+nav .hidden sm:hidden button:hover svg {
+    fill: #2d3748; /* Cambia el color del icono al pasar el ratón por encima según tu preferencia */
+}
+
+      </style>

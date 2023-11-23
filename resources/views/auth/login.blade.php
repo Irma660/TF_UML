@@ -88,7 +88,7 @@
 
         <!-- Password -->
         <div>
-            <label class="custom-form-label" for="password">{{ __('Password') }}</label>
+            <label class="custom-form-label" for="password">{{ __('Contraseña') }}</label>
             <input id="password" class="custom-form-input" type="password" name="password" required autocomplete="current-password" />
             <x-input-error :messages="$errors->get('password')" class="custom-error-message" />
         </div>
@@ -96,18 +96,18 @@
         <!-- Remember Me -->
         <div class="custom-checkbox-label">
             <input id="remember_me" type="checkbox" name="remember">
-            <label for="remember_me">{{ __('Remember me') }}</label>
+            <label for="remember_me">{{ __('Recuerdámelo') }}</label>
         </div>
 
         <div>
             @if (Route::has('password.request'))
                 <a class="custom-forgot-password" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
+                    {{ __('¿Olvidaste tu contraseña?') }}
                 </a>
             @endif
 
             <button class="custom-submit-button" type="submit">
-                {{ __('Log in') }}
+                {{ __('Ingresar') }}
             </button>
         </div>
     </form>
